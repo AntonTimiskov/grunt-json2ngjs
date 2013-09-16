@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@github.com:AntonTimiskov/grunt-json2ngjs.git"
   },
   "engines": {
     "node": ">= 0.8.0"
