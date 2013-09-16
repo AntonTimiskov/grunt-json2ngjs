@@ -1,0 +1,26 @@
+{
+  "name": "grunt-json2ngjs",
+  "description": "Compiles json to AngularJS JavaScript",
+  "version": "0.0.1",
+  "homepage": "",
+  "author": {
+    "name": "Anton timiskov",
+    "email": "atimiskov@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.0"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
