@@ -30,13 +30,13 @@ module.exports = function(grunt) {
   // compile a template to an angular module
   var compileTemplate = function(moduleName, filepath, quoteChar, indentString) {
 
-    var content = JSON.stringify(grunt.file.read(filepath));
-    var doubleIndent = indentString + indentString;
+    var content = grunt.file.read(filepath);
 
     var module = 'angular.module(' + quoteChar + moduleName +
       quoteChar + ', []).run([' + quoteChar + '$templateCache' + quoteChar + ', function($templateCache) ' +
-      '{\n' + indentString + '$templateCache.put(' + quoteChar + moduleName + quoteChar + ',\n' + doubleIndent  + quoteChar +  content +
-       quoteChar + ');\n}]);\n';
+      '{\n' + indentString + '$templateCache.put(' + quoteChar + moduleName + quoteChar + ',\n' + content +
+       ');\n}]);\n';
+
 
     return module;
   };
