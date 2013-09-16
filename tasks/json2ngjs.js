@@ -30,7 +30,7 @@ module.exports = function(grunt) {
   // compile a template to an angular module
   var compileTemplate = function(moduleName, filepath, quoteChar, indentString) {
 
-    var content = json.dumps(grunt.file.read(filepath));
+    var content = JSON.dumps(grunt.file.read(filepath));
     var doubleIndent = indentString + indentString;
 
     var module = 'angular.module(' + quoteChar + moduleName +
