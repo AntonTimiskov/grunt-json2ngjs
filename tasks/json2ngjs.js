@@ -31,6 +31,17 @@ module.exports = function(grunt) {
   var compileTemplate = function(moduleName, filepath, quoteChar, indentString) {
 
     var content = grunt.file.read(filepath);
+    
+    if( content.trim().length === 0 ){
+      content = '{}';
+    }
+    
+    try {
+      JSON.parse(content);
+    } catch(e) {
+      console.error('json2ngjs:ParsingError', filepath, content, e);
+      return '';
+    }
 
     var module = 'angular.module(' + quoteChar + moduleName +
       quoteChar + ', []).run([' + quoteChar + '$templateCache' + quoteChar + ', function($templateCache) ' +
