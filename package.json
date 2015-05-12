@@ -1,7 +1,7 @@
 {
   "name": "grunt-json2ngjs",
   "description": "Compiles json to AngularJS JavaScript",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/AntonTimiskov/grunt-json2ngjs",
   "author": "Anton timiskov <atimiskov@gmail.com>",
   "repository": {
