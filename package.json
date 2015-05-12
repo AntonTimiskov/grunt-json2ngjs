@@ -2,11 +2,8 @@
   "name": "grunt-json2ngjs",
   "description": "Compiles json to AngularJS JavaScript",
   "version": "1.0.0",
-  "homepage": "",
-  "author": {
-    "name": "Anton timiskov",
-    "email": "atimiskov@gmail.com"
-  },
+  "homepage": "https://github.com/AntonTimiskov/grunt-json2ngjs",
+  "author": "Anton timiskov <atimiskov@gmail.com>",
   "repository": {
     "type": "git",
     "url": "git@github.com:AntonTimiskov/grunt-json2ngjs.git"
@@ -22,5 +19,12 @@
   },
   "keywords": [
     "gruntplugin"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/AntonTimiskov/grunt-json2ngjs/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT"
 }
